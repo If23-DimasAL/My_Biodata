@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biodata Dimas Andika Lismani</title>
+    <title>Biodata</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #f9f8ff, #f5caff);
-            color: #000000;
+            background: linear-gradient(135deg, #5e72e4, hsl(237, 18%, 79%));
+            color: #fff;
             margin: 0;
             padding: 20px;
         }
@@ -24,25 +24,25 @@
         h1 {
             text-align: center;
             margin-bottom: 20px;
-            color: #5e72e4;
+            color: #ffeb3b;
             font-size: 2.5em;
         }
         p {
             line-height: 1.8;
-            color: #000000;
+            color: #f3f3f3;
             font-size: 1.1em;
         }
         .label {
             font-weight: bold;
-            color: #5e72e4;
+            color: #ffeb3b;
         }
         img {
             display: block;
             margin: 20px auto;
-            width: 180px; /* Sesuaikan ukuran gambar */
+            width: 180px;
             height: 180px;
-            border-radius: 50%; /* Untuk membuat gambar bulat */
-            border: 4px solid #5e72e4;
+            border-radius: 50%;
+            border: 4px solid #ffeb3b;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease-in-out;
         }
@@ -58,7 +58,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 10px;
-            border-bottom: 1px solid #5e72e4;
+            border-bottom: 1px solid #ffeb3b;
         }
         .info:last-child {
             border-bottom: none;
@@ -69,13 +69,36 @@
         .value {
             text-align: right;
         }
+        .skills {
+            margin-top: 20px;
+        }
+        .skill {
+            margin: 10px 0;
+        }
+        .skill-label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .skill-bar {
+            background-color: #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 20px;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .skill-bar-fill {
+            height: 100%;
+            border-radius: 10px;
+            background: linear-gradient(90deg, #e03c00, #ffc400);
+            transition: width 0.5s ease-in-out;
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Biodata Dimas Andika Lismani</h1>
-    <img src="profilekyu.jpg" alt="Foto Profil Dimas Andika Lismani">
+    <h1>Biodata</h1>
+    <img src="images/profilekyu.jpg" alt="Foto Profil Dimas Andika Lismani">
     
     <div class="info">
         <span class="label">Nama:</span>
@@ -83,11 +106,15 @@
     </div>
     <div class="info">
         <span class="label">Tempat, Tanggal Lahir:</span>
-        <span class="value">05/07/2005</span>
+        <span class="value">Kota Bandung ( Jawa Barat ), 05/07/2005</span>
     </div>
     <div class="info">
         <span class="label">Alamat:</span>
         <span class="value">Palumbonsari lamaran, Jl. Manunggal VII, Perum. Buana Asri, Blok B6 No.29 RT.04 / RW.17</span>
+    </div>
+    <div class="info">
+        <span class="label">Pendidikan Terakhir:</span>
+        <span class="value">SMA Negeri 4 Karawang Barat.</span>
     </div>
     <div class="info">
         <span class="label">Pekerjaan:</span>
@@ -96,6 +123,29 @@
     <div class="info">
         <span class="label">Hobi:</span>
         <span class="value">Mengoprek-Hardware</span>
+    </div>
+
+    <!-- Menambahkan Skill Bar -->
+    <div class="skills">
+        <h2 class="label">Skill</h2>
+        <div class="skill">
+            <div class="skill-label">Keramahan: 90%</div>
+            <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 90%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-label">Pemrograman: 55%</div>
+            <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 55%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-label">Hardware: 64%</div>
+            <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 64%;"></div>
+            </div>
+        </div>
     </div>
 </div>
 
